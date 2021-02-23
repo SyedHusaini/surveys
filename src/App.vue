@@ -1,7 +1,7 @@
 <template>
-  <div class="subpixel-antialiased h-screen">
-    <!-- <Navbar /> -->
-    <div class="body-height transition-colors duration-500 overflow-y-auto">
+  <div class="subpixel-antialiased">
+    <Navbar />
+    <div class="transition-colors duration-500">
       <router-view v-slot="{ Component }">
         <transition name="router-anim">
           <!-- <keep-alive include="ViewStats"> -->
@@ -14,9 +14,9 @@
 </template>
 
 <script>
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 export default {
-  // components: { Navbar },
+  components: { Navbar },
 };
 </script>
 
