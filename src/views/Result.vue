@@ -16,6 +16,15 @@
     <div class="text-center text-xl mt-3 w-3/5" v-else-if="grandTotal <= 30">
       Based on your assessment you are considered to have high self-esteem.
     </div>
+    <div class="w-3/6 text-gray-600 mt-5">
+      SCORE KEY
+      <br />
+      The scale ranges from 0-30, with 30 indicating the highest score possible.
+      Scores between 0-15 indicate that you have generally negative thoughts or
+      feelings about your ability, your personal qualities, and your
+      self-concept. The range for normal or "healthy" self esteem is 16-25,
+      while any score over 25 is considered to be high self-esteem
+    </div>
     <router-link
       to="/"
       class="p-2 px-12 mt-5 self-center outline-none border border-pink-700 font-semibold text-pink-700 rounded hover:bg-pink-700 hover:text-white transition-colors duration-400"
@@ -25,7 +34,7 @@
   </div>
   <div
     v-else-if="survey === '2'"
-    class="flex flex-col justify-center items-center w-full h-screen"
+    class="flex flex-col py-10 justify-center items-center w-full"
   >
     <div class="text-3xl font-semibold text-gray-600">
       Your Score:
@@ -40,7 +49,7 @@
     <div class="text-center text-xl mt-3 w-3/5" v-else-if="grandTotal <= 5.0">
       You are high in self-compassion
     </div>
-    <table class="w-80 mt-5">
+    <table class="md:w-3/6 w-full mt-5">
       <tr>
         <th colspan="2" class="border">
           <div class="text-gray-500 text-lg">Summary</div>
@@ -95,7 +104,7 @@
         </td>
       </tr>
     </table>
-    <div class="w-3/6 text-gray-600 mt-5">
+    <div class="md:w-3/6 w-full md:px-0 px-2 text-gray-600 mt-5">
       A score of 1-2.5 indicates you are low in self-compassion, 2.6-3.5
       indicates you are moderate, and 3.5 - 5.0 means you are high in
       self-compassion.
@@ -104,6 +113,47 @@
       over-identification (OI) subscales before reverse coding indicates less
       self-compassion.
     </div>
+    <div class="mt-5 bg-pink-200 md:w-3/6 w-full flex flex-col">
+      <div
+        class="relative h-8 bg-yellow-300 font-bold max-w-max pl-3 pr-0.5 py-1"
+      >
+        HOW DID YOU DO?
+        <div
+          class="w-0 h-0 absolute -right-2.5 top-0 border-l-4 border-t-2 border-b-2"
+          style="
+            border-top: 16px solid transparent;
+            border-left: 10px solid rgba(252, 211, 77);
+            border-bottom: 16px solid transparent;
+          "
+        ></div>
+      </div>
+      <div class="pl-3 pr-10 py-2">
+        <span class="font-semibold italic">Self-kindness</span>
+        is the capacity to be warm and understanding toward ourselves when we
+        suffer, fail, or feel inadequate. The opposite of self-kindness is
+        <span class="font-semibold italic">Self-judgment</span>; this is the
+        tendency to ignore personal emotional pain and beat yourself up with
+        self-criticism.
+      </div>
+      <div class="pl-3 pr-10 py-2">
+        <span class="font-semibold italic">Common humanity</span>
+        is the capacity to recognize that suffering and personal inadequacy are
+        part of the shared human experience. Conversely,
+        <span class="font-semibold italic">Isolation</span>
+        is characterized by the pervasive sense that you are the only person who
+        suffers or makes mistakes.
+      </div>
+      <div class="pl-3 pr-10 py-2">
+        <span class="font-semibold italic">Mindfulness</span>
+        is the ability to observe negative emotions with openness and clarity
+        for a more balanced approach. Feelings are neither suppressed nor
+        exaggerated.
+          <span class="font-semibold italic">Over identification</span>
+        is the opposite and suggests that you are caught up by and swept away in
+        your own negative reactions.
+      </div>
+    </div>
+
     <router-link
       to="/"
       class="p-2 px-12 mt-5 self-center outline-none border border-pink-700 font-semibold text-pink-700 rounded hover:bg-pink-700 hover:text-white transition-colors duration-400"

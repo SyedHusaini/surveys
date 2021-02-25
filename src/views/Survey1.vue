@@ -1,7 +1,13 @@
 <template>
   <div class="p-8 mb-32">
-    <div class="text-xl font-semibold my-10 text-pink-700">
-      ROSENBERG SELF-ESTEEM ASSESSMENT
+    <div class="text-xl font-semibold mt-10 text-pink-700">
+      SELF-ESTEEM ASSESSMENT
+    </div>
+    <div class="text-lg mb-10 mt-5 text-gray-600">
+      Below is a list of statements dealing with your general feelings about
+      yourself.
+      <br />
+      For each question choose the answer that you most relate to.
     </div>
     <div>
       <form v-on:submit.prevent="onSubmit" class="flex flex-col">
@@ -37,10 +43,10 @@
         </div>
 
         <button
-          class="p-2 mt-5 w-32 self-center border border-pink-700 font-semibold text-pink-700 rounded hover:bg-pink-700 hover:text-white transition-colors duration-400"
+          class="p-2 mt-5 px-6 self-center border border-pink-700 font-semibold text-pink-700 rounded hover:bg-pink-700 hover:text-white transition-colors duration-400"
           type="submit"
         >
-          Submit
+          Score My Assessment
         </button>
       </form>
     </div>
