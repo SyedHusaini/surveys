@@ -1,50 +1,56 @@
 <template>
-  <div class="p-8 mb-32">
-    <div class="text-xl font-semibold mt-10 text-pink-700">
-      SELF-COMPASSION ASSESSMENT
-    </div>
-    <div class="text-lg mb-10 mt-5 text-gray-600">
-      Please read each statement carefully before answering. Indicate how often
-      you behave in the stated manner, using the indicated options
-    </div>
-    <div>
-      <form v-on:submit.prevent="onSubmit" class="flex flex-col">
-        <div
-          v-for="(item, index) in data"
-          :key="index"
-          class="pb-2 border-b mt-5"
-        >
-          <div>
-            <span>{{ index + 1 }}. </span><span>{{ item.question }}</span>
-          </div>
-          <div class="my-3">
-            <select
-              class="p-2 border rounded-md appearance-none sm:w-80 w-full outline-none hover:shadow-md focus:ring-1 focus:ring-pink-600"
-              v-model="data[index].answer"
-              title="Please select an answer"
-              required
-            >
-              <option disabled hidden value="" class="text-gray-400">
-                Please select an answer
-              </option>
-              <option
-                v-for="(item, index) in answers"
-                :key="index"
-                :value="index + 1"
-              >
-                {{ item }}
-              </option>
-            </select>
-          </div>
+  <div class="py-16 px-4 mb-32">
+    <div class="relative bg-pink-100 h-full p-8 rounded-lg shadow-sm">
+      <div
+        class="relative bg-white -my-16 m-auto p-8 shadow-2xl rounded-lg border"
+      >
+        <div class="text-xl font-semibold mt-10 text-pink-700">
+          SELF-COMPASSION ASSESSMENT
         </div>
+        <div class="text-lg mb-10 mt-5 text-gray-600">
+          Please read each statement carefully before answering. Indicate how
+          often you behave in the stated manner, using the indicated options
+        </div>
+        <div>
+          <form v-on:submit.prevent="onSubmit" class="flex flex-col">
+            <div
+              v-for="(item, index) in data"
+              :key="index"
+              class="pb-2 border-b mt-5"
+            >
+              <div>
+                <span>{{ index + 1 }}. </span><span>{{ item.question }}</span>
+              </div>
+              <div class="my-3">
+                <select
+                  class="p-2 border rounded-md appearance-none sm:w-80 w-full outline-none hover:shadow-md focus:ring-1 focus:ring-pink-600"
+                  v-model="data[index].answer"
+                  title="Please select an answer"
+                  required
+                >
+                  <option disabled hidden value="" class="text-gray-400">
+                    Please select an answer
+                  </option>
+                  <option
+                    v-for="(item, index) in answers"
+                    :key="index"
+                    :value="index + 1"
+                  >
+                    {{ item }}
+                  </option>
+                </select>
+              </div>
+            </div>
 
-        <button
-          class="p-2 mt-5 px-6 self-center border border-pink-700 font-semibold text-pink-700 rounded hover:bg-pink-700 hover:text-white transition-colors duration-400"
-          type="submit"
-        >
-          Score My Assessment
-        </button>
-      </form>
+            <button
+              class="p-2 mt-5 px-6 self-center border border-pink-700 font-semibold text-pink-700 rounded hover:bg-pink-700 hover:text-white transition-colors duration-400"
+              type="submit"
+            >
+              Score My Assessment
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </template>
