@@ -23,6 +23,9 @@
 <script>
 export default {
   name: "Home",
+  mounted() {
+    document.title = "Surveys";
+  },
 };
 </script>
 

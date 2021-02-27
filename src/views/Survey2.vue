@@ -86,6 +86,9 @@ export default {
       },
     };
   },
+  mounted() {
+    document.title = "Self-Compassion Assessment";
+  },
   methods: {
     calculationHelper() {
       Object.keys(this.calculationIndexes).forEach((type) => {

@@ -14,6 +14,16 @@
         class="absolute w-full h-full transform -rotate-2 bg-gradient-to-br from-pink-200 to-pink-300 rounded-2xl"
       ></div>
       <div
+        v-if="survey"
+        class="font-semibold text-3xl text-pink-600 pb-10 select-none"
+      >
+        {{
+          survey === "1"
+            ? "Self-Esteem Assessment"
+            : "Self-Compassion Assessment"
+        }}
+      </div>
+      <div
         v-if="survey === '1'"
         class="p-4 bg-white rounded-lg flex flex-col justify-center items-center w-full"
       >

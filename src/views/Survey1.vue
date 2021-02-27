@@ -75,6 +75,9 @@ export default {
       normalQuestions: [1, 2, 4, 6, 7],
     };
   },
+  mounted() {
+    document.title = "Self-Esteem Assessment";
+  },
   methods: {
     onSubmit() {
       console.log("submitted", this.data);
