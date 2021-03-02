@@ -39,7 +39,7 @@
                     :value="
                       normalQuestions.includes(qIndex + 1)
                         ? index
-                        : answers.length - index
+                        : answers.length - index - 1
                     "
                   >
                     {{ item }}
