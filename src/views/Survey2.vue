@@ -114,11 +114,11 @@ export default {
 
       this.result.grandTotal =
         (this.result.selfKindness +
-          this.result.reverseSelfJudgement +
+          this.result.selfJudgement +
           this.result.commonHumanity +
-          this.result.reverseIsolation +
+          this.result.isolation +
           this.result.mindfulness +
-          this.result.reverseOverIdentification) /
+          this.result.overIdentification) /
         6;
 
       console.log(this.result);
