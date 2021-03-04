@@ -118,7 +118,7 @@
               <div>Your Self-Kindness Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ selfKindness }}</div>
+              <div>{{ selfKindness.toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -126,7 +126,7 @@
               <div>Your Self-Judgement Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ selfJudgement }}</div>
+              <div>{{ selfJudgement.toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -134,7 +134,7 @@
               <div>Your Common Humanity Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ commonHumanity }}</div>
+              <div>{{ commonHumanity.toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -142,7 +142,7 @@
               <div>Your Isolation Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ isolation }}</div>
+              <div>{{ isolation.toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -150,7 +150,7 @@
               <div>Your Mindfulness Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ mindfulness }}</div>
+              <div>{{ mindfulness.toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -158,7 +158,7 @@
               <div>Your Over-Identification Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ overIdentification }}</div>
+              <div>{{ overIdentification.toFixed(1) }}</div>
             </td>
           </tr>
         </table>
