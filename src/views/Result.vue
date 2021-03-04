@@ -163,13 +163,14 @@
           </tr>
         </table>
         <div class="lg:w-3/6 w-full lg:px-0 px-2 text-gray-600 mt-5">
-          A score of 1-2.5 indicates you are low in self-compassion, 2.6-3.5
-          indicates you are moderate, and 3.5 - 5.0 means you are high in
-          self-compassion.
-          <br />
-          NOTE: higher means for Self-Judgment (SJ), Isolation (I), and
-          over-identification (OI) subscales before reverse coding indicates
-          less self-compassion.
+          A Self-Kindness (K), a Common Humanity (CH), and a Mindfulness (M)
+          score of 1-2.5 indicates you are low in self-compassion. A score of
+          2.6-3.5 indicates you are moderate, A score of 3.5 - 5.0 means you are
+          high in self-compassion.
+          <br class="mb-2" />
+          A Self-Judgment (SJ), Isolation (I), and Over-Identification (OI)
+          score of 1-2.5 indicates high self-compassion, 2.6-3.5 is moderate,
+          and 3.5-5.0 means low self-compassion.
         </div>
         <div class="mt-5 bg-pink-200 lg:w-3/6 w-full flex flex-col">
           <div
@@ -243,6 +244,7 @@ export default {
     return {};
   },
   mounted() {
+    window.scrollTo(0, 0);
     console.log(this.survey);
     console.log(this.grandTotal);
     // if (!this.params || !this.params.survey) {

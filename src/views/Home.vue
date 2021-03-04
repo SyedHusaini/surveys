@@ -24,6 +24,7 @@
 export default {
   name: "Home",
   mounted() {
+    window.scrollTo(0, 0);
     document.title = "Surveys";
   },
 };

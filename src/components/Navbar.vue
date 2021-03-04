@@ -4,7 +4,7 @@
   >
     <div class="flex-grow flex justify-center">
       <!-- <router-link to="/"> -->
-      <img src="../assets/logo.jpg" alt="logo" class="inline w-24" />
+      <img src="../assets/logo.jpg" alt="logo" class="inline w-24 h-22" />
       <!-- </router-link> -->
     </div>
   </div>
