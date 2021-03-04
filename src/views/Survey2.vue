@@ -28,7 +28,7 @@
                   title="Please select an answer"
                   required
                 >
-                  <option disabled hidden value="" class="text-gray-400">
+                  <option disabled value="" class="text-gray-400">
                     Please select an answer
                   </option>
                   <option
@@ -107,18 +107,18 @@ export default {
 
       //Calculation Helper
       this.calculationHelper();
-      this.result.reverseSelfJudgement = this.result.selfJudgement - 6;
-      this.result.reverseIsolation = this.result.isolation - 6;
+      this.result.reverseSelfJudgement = 6 - this.result.selfJudgement;
+      this.result.reverseIsolation = 6 - this.result.isolation;
       this.result.reverseOverIdentification =
-        this.result.overIdentification - 6;
+        6 - this.result.overIdentification;
 
       this.result.grandTotal =
         (this.result.selfKindness +
-          this.result.selfJudgement +
+          this.result.reverseSelfJudgement +
           this.result.commonHumanity +
-          this.result.isolation +
+          this.result.reverseIsolation +
           this.result.mindfulness +
-          this.result.overIdentification) /
+          this.result.reverseOverIdentification) /
         6;
 
       console.log(this.result);

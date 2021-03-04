@@ -95,6 +95,13 @@
           self esteem is 16-25, while any score over 25 is considered to be high
           self-esteem
         </div>
+
+        <a
+          class="p-2 mt-5 px-6 self-center border border-pink-700 font-semibold text-pink-700 rounded hover:bg-pink-700 hover:text-white transition-colors duration-400"
+          :href="`/survey${survey}`"
+        >
+          Retake Assessment
+        </a>
       </div>
       <div
         v-if="survey === '2'"
@@ -205,6 +212,13 @@
             away in your own negative reactions.
           </div>
         </div>
+
+        <a
+          class="p-2 mt-5 px-6 self-center border border-pink-700 font-semibold text-pink-700 rounded hover:bg-pink-700 hover:text-white transition-colors duration-400"
+          :href="`/survey${survey}`"
+        >
+          Retake Assessment
+        </a>
       </div>
     </div>
   </div>

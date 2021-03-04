@@ -30,7 +30,7 @@
                   title="Please select an answer"
                   required
                 >
-                  <option disabled hidden value="" class="text-gray-400">
+                  <option disabled value="" class="text-gray-400">
                     Please select an answer
                   </option>
                   <option
