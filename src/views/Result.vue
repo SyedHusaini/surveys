@@ -28,7 +28,8 @@
         class="p-4 bg-white rounded-lg flex flex-col justify-center items-center w-full"
       >
         <div class="text-3xl font-semibold text-gray-600">
-          Your Score: <span class="text-pink-600">{{ grandTotal }}</span>
+          Your Score:
+          <span class="text-pink-600">{{ grandTotal }}</span>
         </div>
         <div
           class="text-center text-xl mt-3 lg:w-3/5 w-full"
@@ -118,7 +119,7 @@
               <div>Your Self-Kindness Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ selfKindness.toFixed(1) }}</div>
+              <div>{{ parseFloat(selfKindness).toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -126,7 +127,7 @@
               <div>Your Self-Judgement Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ selfJudgement.toFixed(1) }}</div>
+              <div>{{ parseFloat(selfJudgement).toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -134,7 +135,7 @@
               <div>Your Common Humanity Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ commonHumanity.toFixed(1) }}</div>
+              <div>{{ parseFloat(commonHumanity).toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -142,7 +143,7 @@
               <div>Your Isolation Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ isolation.toFixed(1) }}</div>
+              <div>{{ parseFloat(isolation).toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -150,7 +151,7 @@
               <div>Your Mindfulness Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ mindfulness.toFixed(1) }}</div>
+              <div>{{ parseFloat(mindfulness).toFixed(1) }}</div>
             </td>
           </tr>
           <tr>
@@ -158,7 +159,7 @@
               <div>Your Over-Identification Score</div>
             </td>
             <td class="border text-center text-pink-600">
-              <div>{{ overIdentification.toFixed(1) }}</div>
+              <div>{{ parseFloat(overIdentification).toFixed(1) }}</div>
             </td>
           </tr>
         </table>
@@ -245,8 +246,8 @@ export default {
   },
   mounted() {
     window.scrollTo(0, 0);
-    console.log(this.survey);
-    console.log(this.grandTotal);
+    // console.log(this.survey);
+    // console.log(this.grandTotal);
     // if (!this.params || !this.params.survey) {
     //   this.$router.push("/");
     // }
